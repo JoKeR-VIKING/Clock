@@ -1,0 +1,135 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+body
+{
+    height: 100vh;
+    background-color: #252421;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock
+{
+    width: 600px;
+    height: 600px;
+    position: relative;
+    border: 15px solid #1A1916;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.23);
+    border-radius: 50%;
+}
+
+.marker
+{
+    width: 0.2%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    background-color: #FFF;
+}
+
+.hands
+{
+    width: 550px;
+    height: 550px;
+    position: absolute;
+    top: calc(50% - 275px);
+    left: calc(50% - 275px);
+    background-color: #252421;
+    border-radius: 50%;
+}
+
+.center
+{
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    top: calc(50% - 3px);
+    left: calc(50% - 3px);
+    background-color: dimgray;
+    border-radius: 50%;
+}
+
+.period
+{
+    position: absolute;
+    top: 53%;
+    left: calc(50% - 10px);
+    color: #FFF;
+    font-size: 1rem;
+}
+
+.hour
+{
+    width: 1.5%;
+    height: 30%;
+    position: absolute;
+    top: 20%;
+    left: 49.25%;
+    border-radius: 5px;
+    background-color: #FFB14A;
+    z-index: 3;
+    transform-origin: bottom center;
+}
+
+.minute
+{
+    width: 1%;
+    height: 40%;
+    position: absolute;
+    top: 10%;
+    left: 49.5%;
+    border-radius: 5px;
+    background-color: #6BC6FF;
+    z-index: 2;
+    transform-origin: bottom center;
+}
+
+.second
+{
+    width: 0.5%;
+    height: 48%;
+    position: absolute;
+    top: 2%;
+    left: 49.75%;
+    border-radius: 5px;
+    background-color: #FFF;
+    z-index: 1;
+    transform-origin: bottom center;
+}
+
+.twelve-six, .three-nine
+{
+    background-color: #6BC6FF;
+}
+
+.one-seven
+{
+    transform: rotate(30deg);
+}
+
+.two-eight
+{
+    transform: rotate(60deg);
+}
+
+.three-nine
+{
+    transform: rotate(90deg);
+}
+
+.four-ten
+{
+    transform: rotate(120deg);
+}
+
+.five-eleven
+{
+    transform: rotate(150deg);
+}
